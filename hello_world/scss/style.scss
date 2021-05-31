@@ -1,0 +1,187 @@
+// Extra Large devices (4K, 1450px and up)
+@media only screen and (min-width: 1450px) {
+  body {
+    margin: 0 10%;
+    font-size: x-large;
+  }
+  header.container {
+    // margin-right: 20%;
+    // width: 75%;
+    // position: relative;
+    left: 0;
+  }
+}
+
+// Large devices (Laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    color: var(--pure);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  :root {
+    --primary: rgb(255, 69, 0);
+    --dark: rgb(0, 0, 0);
+    --pure: rgb(255, 255, 255);
+    --ternary: rgb(137, 137, 137);
+    --light: rgb(242, 242, 242);
+  }
+
+  header.container {
+    padding: 0.5em;
+    width: 100%;
+    color: var(--pure);
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .branding a {
+      color: var(--primary);
+      font-family: "Aquire", sans-serif;
+      font-size: x-large;
+      font-weight: bolder;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .navbar {
+      display: flex;
+      a {
+        color: var(--pure);
+        padding: 0.5em 2em 0 2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+        border-bottom: transparent 2px solid;
+        &:hover {
+          color: var(--primary);
+          border-bottom: var(--primary) 2px solid;
+        }
+      }
+    }
+    .btn {
+      padding: 0 2em;
+      color: var(--pure);
+      font-size: large;
+      font-weight: bolder;
+      background-color: var(--primary);
+      transition: all 0.5s ease;
+      border: transparent 2px solid;
+      cursor: pointer;
+      &:hover {
+        background-color: transparent;
+        border: var(--primary) 2px solid;
+      }
+    }
+  }
+
+  section {
+    margin-top: 0.5em;
+    padding-top: 4em;
+  }
+
+  section#home {
+    min-height: 10em;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-evenly;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+    .hero img {
+      // width: 25em;
+      height: 35rem;
+    }
+    .hero-intro {
+      color: var(--pure);
+      display: flex;
+      flex-flow: nowrap column;
+      justify-content: center;
+    }
+  }
+
+  section#about {
+    min-height: 10em;
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    .hero-hq img {
+      width: 35rem;
+      margin: 5em 0;
+      border: var(--primary) 5px solid;
+    }
+    .hero-xp {
+      img {
+        width: 4rem;
+        padding: 0.5em;
+        border: var(--primary) 5px solid;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  section#service {
+    background-color: var(--ternary);
+    min-height: 10em;
+  }
+
+  section#portfolio {
+    background-color: var(--light);
+    min-height: 10em;
+  }
+
+  footer.container {
+    padding: 1em;
+    background-color: var(--dark);
+    min-height: 20em;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+    .contact {
+      display: flex;
+      justify-content: space-around;
+      .address {
+        min-width: 25em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .social img {
+          margin: 0 0.5em;
+          border-radius: 50%;
+        }
+      }
+      .form {
+        min-width: 25em;
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+    .copyrights {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+// Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+}
+
+// Small devices (potrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+}
+
+// Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {
+}
