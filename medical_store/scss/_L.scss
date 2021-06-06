@@ -7,7 +7,7 @@
 
   body {
     color: var(--pure);
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Baloo Da', cursive, "Lato", sans-serif !important;
     font-weight: bolder;
     &::-webkit-scrollbar {
       display: none;
@@ -31,46 +31,52 @@
       flex-direction: column;
       align-items: center;
       h1 {
+        padding-top: 1rem;
         font-size: 4rem;
+        line-height: 95%;
       }
     }
   }
-// MAIN
-main {
-  // padding-top: 0.1rem;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  div {
-    padding: 0 2rem;
-    width: 33%;
-    border: 2px solid var(--light);
-  }
-  form#add {
+  // MAIN
+  main {
+    // padding-top: 0.1rem;
     display: flex;
-    flex-flow: column;
-    input {
-      padding: .5rem;
-      margin: .25rem;
+    flex-flow: row;
+    justify-content: space-evenly;
+    div {
+      padding: 0 2rem;
+      width: 33%;
+      border: 2px solid var(--light);
+    }
+    form#add {
+      display: flex;
+      flex-flow: column;
+      width: 90%;
+      input {
+        padding: 0.5rem;
+        margin: 1rem 0;
+      }
     }
   }
-}
 
-div.add {
-  background-color: var(--ternary);
-  width: 25%;
-  min-height: 25rem;
-}
-div.preview {
-  background-color: var(--light);
-  width: 50%;
-  min-height: 25rem;
-}
-div.search {
-  background-color: var(--ternary);
-  width: 25%;
-  min-height: 25rem;
-}
+  div.add {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  div.preview {
+    background-color: var(--light);
+    width: 50%;
+    min-height: 25rem;
+  }
+  div.search {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 25rem;
+  }
   // footer
   footer.container {
     padding: 1em;
@@ -106,4 +112,23 @@ div.search {
       justify-content: center;
     }
   }
+}
+
+.btn {
+  cursor: pointer;
+  border: 0px outset transparent;
+  background-color: var(--primary);
+}
+
+.btn-add {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  left: 25%;
+  // top: 55%;
+  // transform: translateX(-50%);
 }

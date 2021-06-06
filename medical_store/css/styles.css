@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da");
 :root {
-  --primary: #5fdd7b;
+  --primary: #08a88a;
   --dark: rgb(0, 0, 0);
   --pure: rgb(255, 255, 255);
-  --ternary: rgb(137, 137, 137);
+  --ternary: rgb(235, 235, 235);
   --light: rgb(242, 242, 242);
 }
 
@@ -13,7 +14,7 @@
   }
   body {
     color: var(--pure);
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Baloo Da', cursive, "Lato", sans-serif !important;
     font-weight: bolder;
   }
   body::-webkit-scrollbar {
@@ -56,7 +57,9 @@
             align-items: center;
   }
   header.container .brandinfo h1 {
+    padding-top: 1rem;
     font-size: 4rem;
+    line-height: 95%;
   }
   main {
     display: -webkit-box;
@@ -83,15 +86,25 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    width: 90%;
   }
   main form#add input {
-    padding: .5rem;
-    margin: .25rem;
+    padding: 0.5rem;
+    margin: 1rem 0;
   }
   div.add {
     background-color: var(--ternary);
     width: 25%;
     min-height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   div.preview {
     background-color: var(--light);
@@ -165,6 +178,30 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.btn {
+  cursor: pointer;
+  border: 0px outset transparent;
+  background-color: var(--primary);
+}
+
+.btn-add {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 25%;
 }
 
 @media only screen and (min-width: 1450px) {
