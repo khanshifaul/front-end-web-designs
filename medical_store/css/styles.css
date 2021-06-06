@@ -1,0 +1,178 @@
+:root {
+  --primary: #5fdd7b;
+  --dark: rgb(0, 0, 0);
+  --pure: rgb(255, 255, 255);
+  --ternary: rgb(137, 137, 137);
+  --light: rgb(242, 242, 242);
+}
+
+@media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: var(--pure);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  header.container {
+    padding: 0.5rem;
+    color: var(--pure);
+    background-color: var(--primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header.container .branding {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 2.5rem;
+  }
+  header.container .brandinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header.container .brandinfo h1 {
+    font-size: 4rem;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main div {
+    padding: 0 2rem;
+    width: 33%;
+    border: 2px solid var(--light);
+  }
+  main form#add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  main form#add input {
+    padding: .5rem;
+    margin: .25rem;
+  }
+  div.add {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 25rem;
+  }
+  div.preview {
+    background-color: var(--light);
+    width: 50%;
+    min-height: 25rem;
+  }
+  div.search {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 25rem;
+  }
+  footer.container {
+    padding: 1em;
+    background-color: var(--dark);
+    min-height: 20em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: nowrap column;
+            flex-flow: nowrap column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer.container .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer.container .contact .address {
+    min-width: 25em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer.container .contact .address .social img {
+    margin: 0 0.5em;
+    border-radius: 50%;
+  }
+  footer.container .contact .form {
+    min-width: 25em;
+  }
+  footer.container .contact .form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer.container .copyrights {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  body {
+    margin: 0 10%;
+    font-size: x-large;
+  }
+  header.container {
+    left: 0;
+  }
+}
