@@ -14,7 +14,7 @@
   }
   body {
     color: var(--pure);
-    font-family: 'Baloo Da', cursive, "Lato", sans-serif !important;
+    font-family: "Bangla", "Lato", sans-serif !important;
     font-weight: bolder;
   }
   body::-webkit-scrollbar {
@@ -73,12 +73,33 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  main div {
-    padding: 0 2rem;
-    width: 33%;
-    border: 2px solid var(--light);
+  div.add {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  main form#add {
+  div.add form#add {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div.add form#add div.querybox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -88,23 +109,14 @@
             flex-flow: column;
     width: 90%;
   }
-  main form#add input {
+  div.add form#add div.querybox input {
     padding: 0.5rem;
     margin: 1rem 0;
   }
-  div.add {
-    background-color: var(--ternary);
-    width: 25%;
-    min-height: 25rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+  div.add form#add div.submit-btn {
+    width: 10%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   div.preview {
     background-color: var(--light);
@@ -119,7 +131,6 @@
   footer.container {
     padding: 1em;
     background-color: var(--dark);
-    min-height: 20em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -178,30 +189,25 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.btn {
-  cursor: pointer;
-  border: 0px outset transparent;
-  background-color: var(--primary);
-}
-
-.btn-add {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  left: 25%;
+  .btn {
+    cursor: pointer;
+    border: 0px outset transparent;
+    background-color: var(--primary);
+  }
+  .btn-add {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1450px) {

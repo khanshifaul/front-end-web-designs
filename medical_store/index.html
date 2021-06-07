@@ -29,37 +29,46 @@
     <main>
         <div class="add">
             <form action="" id="add">
-                <input type="search" name="pharmaceutical" id="pharmaceutical" placeholder="Enter Pharmaceutical Name">
-                <input type="search" name="medicine" id="medicine" placeholder="Enter Medicine Name">
-                <input type="number" name="quantity" id="quantity" placeholder="Enter Quantity">
-                <input type="number" name="discount" id="discount" placeholder="Discount">
-                <button type="submit" class="btn btn-add">
-                    <lord-icon src="https://cdn.lordicon.com//mecwbjnp.json" trigger="click"
-                        colors="primary:#08a88a,secondary:#ffffff" stroke="200" style="width:100px;height:100px">
-                    </lord-icon>
-                </button>
-                <!-- <select name="Pharmaceutical" id="">
-                    <option value="Renata">Renata</option>
-                    <option value="Square">Square</option>
-                    <option value="Incepta">Incepta</option>
-                    <option value="ACME">ACME</option>
-                    <option value="ACI">ACI</option>
-                </select> -->
+                <div class="querybox">
+                    <input type="search" name="pharmaceutical" id="pharmaceutical"
+                        placeholder="Enter Pharmaceutical Name">
+                    <input type="search" name="medicine" id="medicine" placeholder="Enter Medicine Name">
+                    <input type="number" name="quantity" id="quantity" placeholder="Enter Quantity">
+                    <input type="number" name="discount" id="discount" placeholder="Discount">
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="btn btn-add">
+                        <lord-icon src="https://cdn.lordicon.com//mecwbjnp.json" trigger="click"
+                            colors="primary:#08a88a,secondary:#ffffff" stroke="200" style="width:100px;height:100px">
+                        </lord-icon>
+                    </button>
+                </div>
             </form>
         </div>
+
         <div class="preview">
             <form action="">
                 <input type="search" name="search" id="" />
             </form>
         </div>
+
         <div class="search">
             <form action="">
-                <input type="search" name="search" id="" />
+                <select name="selectSearch" id="">
+                    <option value="CustomerName">Search by Customer Name</option>
+                    <option value="CustomerPhoneNO">Search by Customer Phone No</option>
+                    <option value="date">Search by Date</option>
+                </select>
+                <input type="search" name="" id="" placeholder="Type here...">
             </form>
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="container">
+        <div class="creator">
+            <p>design & developed by <span>Shifaul</span></p>
+        </div>
+    </footer>
 </body>
 
 </html>

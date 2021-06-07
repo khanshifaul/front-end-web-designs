@@ -7,7 +7,7 @@
 
   body {
     color: var(--pure);
-    font-family: 'Baloo Da', cursive, "Lato", sans-serif !important;
+    font-family: "Bangla", "Lato", sans-serif !important;
     font-weight: bolder;
     &::-webkit-scrollbar {
       display: none;
@@ -43,29 +43,34 @@
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-    div {
-      padding: 0 2rem;
-      width: 33%;
-      border: 2px solid var(--light);
-    }
-    form#add {
-      display: flex;
-      flex-flow: column;
-      width: 90%;
-      input {
-        padding: 0.5rem;
-        margin: 1rem 0;
-      }
-    }
   }
 
   div.add {
     background-color: var(--ternary);
+    // padding: 0 1rem;
     width: 25%;
-    min-height: 25rem;
+    min-height: 35%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    form#add {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      div.querybox {
+        display: flex;
+        flex-flow: column;
+        width: 90%;
+        input {
+          padding: 0.5rem;
+          margin: 1rem 0;
+        }
+      }
+      div.submit-btn {
+        width: 10%;
+        transform: translateX(100%);
+      }
+    }
   }
   div.preview {
     background-color: var(--light);
@@ -77,11 +82,11 @@
     width: 25%;
     min-height: 25rem;
   }
+
   // footer
   footer.container {
     padding: 1em;
     background-color: var(--dark);
-    min-height: 20em;
     display: flex;
     flex-flow: nowrap column;
     justify-content: space-between;
@@ -112,23 +117,19 @@
       justify-content: center;
     }
   }
-}
 
-.btn {
-  cursor: pointer;
-  border: 0px outset transparent;
-  background-color: var(--primary);
-}
+  .btn {
+    cursor: pointer;
+    border: 0px outset transparent;
+    background-color: var(--primary);
+  }
 
-.btn-add {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: sticky;
-  left: 25%;
-  // top: 55%;
-  // transform: translateX(-50%);
+  .btn-add {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
