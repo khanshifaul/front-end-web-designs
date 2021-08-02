@@ -2,25 +2,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.phone-mockup {
+/* .phone-mockup {
   background-color: rgba(189, 189, 189, 0.3);
-}
+} */
 
 @media (min-width: 1024px) {
   .phone-mockup {
     background-color: rgba(189, 189, 189, 0.3);
-    background-image: url("/Spense Starter Files/Assets/Phone Mockup (Desktop).png");
+    background-image: url("/Assets/Phone Mockup (Desktop).png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    /* border: 1px solid black; */
     border-radius: 10px;
   }
-  .phone-mockup div {
+  .escrow-text {
     width: 50%;
   }
 }
 
 .px-80 {
   padding: 0 80px;
+}
+
+.heading {
+  font-size: large;
+  font-weight: bolder;
 }
