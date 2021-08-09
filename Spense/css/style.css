@@ -24,7 +24,10 @@ body {
   padding: 0 80px;
 }
 
-.heading {
-  font-size: large;
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
   font-weight: bolder;
 }

@@ -1,0 +1,57 @@
+:root {
+    --primary: #7ca5f3;
+    --secondary: #3c3c3c;
+    --dark: #000;
+    --light: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 8.5in !important                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+  height: 11in !important;
+  background: #000;
+}
+
+.column-left {
+  width: 35% !important;
+  height: 100%;
+  background-color: #7ca5f3;
+}
+
+.column-right {
+  width: 60% !important;
+  height: auto;
+}
+
+.text-light {
+  color: whitesmoke;
+}
+
+.text-dark {
+    color: black;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.bolder {
+  font-weight: bolder !important;
+}
+
+.flex {
+  display: flex;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
