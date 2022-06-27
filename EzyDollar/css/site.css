@@ -1,0 +1,41 @@
+.darkmode-btn input[type="checkbox"] {
+  display: none;
+}
+
+.darkmode-btn {
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.darkmode-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.darkmode-box .darkmode-ball {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  transition: all 1s ease;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.darkmode-box .scenary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 1s ease;
+  padding: 5px;
+}
+.darkmode-box .scenary svg {
+  width: 20px;
+}

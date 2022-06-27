@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-color-scheme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The page supports both light and dark color schemes, with light being default -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- BOOTSTRAP CSS -->
+    <!-- <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"> -->
+
+    <!-- BOOTSTRAP Blackbox -->
+    <link rel="stylesheet" href="/lib/bootstrap-dark-5/dist/css/bootstrap-blackbox.css">
+
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="/lib/animate.css-main/animate.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap">
+
+    <!-- Bangla Font -->
+    <link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css">
+
+    <!-- Site.css -->
+    <link rel="stylesheet" href="/css/site.css">
+
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <!-- Header -->
+    <header>
+        <div class="d-flex justify-content-between container-fluid">
+            <a class="navbar-brand fw-bolder" href="/">
+                <img src="/img/progress.png" height="75" class="d-inline-block align-items-center" alt="">
+                <img src="/img/progress-1.png" height="50" class="d-inline-block align-items-center" alt="">
+            </a>
+            <a class="navbar-brand fw-bolder d-flex align-items-center chsir" href="/">
+                <div class="col px-2 chsir-name">
+                    <p>Founder Chairman <br> Rotarian Md. Mostafizer Rohman</p>
+                </div>
+                <img src="/img/CH Sir1.jpg" height="75" class="d-inline-block align-items-center col chsir-img" alt="">
+            </a>
+
+        </div>
+        <nav class="navbar navbar-light navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
+            <div class="navbar-collapse collapse justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/FAQs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-user"></i> Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><a class="nav-link" href="#">
+                                <i class="fa-solid fa-user"></i> Profile</a></li>
+                        <li class="dropdown-item">
+                            <a class="nav-link" title="Manage" href="/Identity/Account/Manage">
+                                <i class="fa-solid fa-user-gear"></i> Settings</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <form class="form-inline" action="/Identity/Account/Logout" method="post">
+                                <button type="submit" class="nav-link btn btn-link">
+                                    <i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero Section -->
+        <section class="container-md d-md-flex p-0 my-2">
+            <div class="flex-grow-1 border border-dark p-2 m-2 text-center">
+                <form class="container" method="post">
+                    <div class="d-flex py-3">
+                        <div class="container">
+                            <h3><i class="fas fa-circle-arrow-up"></i> Send</h3>
+                            <select class="form-select rounded-4 mb-3" name="" id="">
+                                <option value="bkash"> Bkash</option>
+                                <option value="">Nagad</option>
+                                <option value="">Rocket</option>
+                                <option value="">Upay</option>
+                            </select>
+                            <input type="number" class="form-control rounded-4" id="" value=1>
+                        </div>
+                        <div class="container">
+                            <h3><i class="fas fa-circle-arrow-down"></i> Receive</h3>
+                            <select class="form-select rounded-4 mb-3" id="">
+                                <option value="">Upay</option>
+                                <option value="">Bkash</option>
+                                <option value="">Nagad</option>
+                                <option value="">Rocket</option>
+                            </select>
+                            <input type="number" class="form-control rounded-4" value="80" name="" id="" disabled>
+                        </div>
+                    </div>
+                    <h5>Exchange Rate: 1 USD = 80 BDT</h5>
+                    <button type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">
+                        Exchange <i class="fas fa-arrows-rotate"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="flex-grow-1 border border-dark p-2 m-2 text-center">
+                <h3>Exchange Rate</h3>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Send</th>
+                            <th>Receive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paypal</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Payoneer</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Webmoney</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Perfect Money</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Coinbase</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Skrill</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Neteller</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>AdvCash</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!--  -->
+        <section class="container-md d-md-flex p-0 my-2">
+            <div class="flex-grow-1">
+                <div class="border border-dark px-2 my-4 mx-2 text-center">
+                    <h3>Completed Exchange</h3>
+                    <table class="table table-striped table-responsive-md">
+                        <thead class="fw-bold  ">
+                            <tr>
+                                <th>Send</th>
+                                <th>Receive</th>
+                                <th>Amount</th>
+                                <th>Username</th>
+                                <th>Date-Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="border border-dark px-2 my-4 mx-2 text-center">
+                    <h3>Incompleted Exchange</h3>
+                    <table class="table table-striped table-responsive">
+                        <thead class="fw-bold  ">
+                            <tr>
+                                <th>Send</th>
+                                <th>Receive</th>
+                                <th>Amount</th>
+                                <th>Username</th>
+                                <th>Date-Time</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Processing</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Cancelled</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Awaiting Payment</td>
+                            </tr>
+                            <tr>
+                                <td>Bkash</td>
+                                <td>Paypal</td>
+                                <td>80 USD</td>
+                                <td>User01</td>
+                                <td>2/5/2022 12:00:00 AM</td>
+                                <td>Awaiting Payment</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="flex-grow-1 border border-dark px-2 my-4 mx-2 text-center">
+                <h3>Our Reserve</h3>
+                <table class="table table-striped table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Send</th>
+                            <th>Receive</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Paypal</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Payoneer</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Webmoney</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Perfect Money</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Coinbase</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Skrill</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>Neteller</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                        <tr>
+                            <td>AdvCash</td>
+                            <td>80 BDT</td>
+                            <td>81 BDT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer border-top m-0">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">&copy; 2022 - <a href="/"
+                        class="text-muted text-decoration-none mb-3 me-2 mb-md-0 lh-1"> Progress Education Family </a>
+                </span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="/lib/bootstrap-dark-5/dist/js/darkmode.js"></script>
+    <!-- SELECT 2 JS -->
+    <!-- <script src="/lib/Select2-4.1.0-rc/js/select2.full.js"></script> -->
+    <!-- CLIPBOARD JS -->
+    <script src="/lib/clipboard.js-master/dist/clipboard.js"></script>
+    <!-- Site JS -->
+    <script src="/js/site.js"></script>
+</body>
+
+</html>

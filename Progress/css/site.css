@@ -1,0 +1,116 @@
+/* body {
+  background-color:rgba(150, 125, 255, 0.3) ;
+}
+input, input:disabled, select {
+  background-color: transparent !important;
+} */
+
+main {
+  min-height: 75vh;
+}
+
+.textarea-msg {
+  min-height: 25vh !important;
+}
+
+.darkmode-btn input[type="checkbox"] {
+  display: none;
+}
+
+.darkmode-btn {
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.darkmode-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60px;
+  height: 30px;
+  background-color: black;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.darkmode-box .darkmode-ball {
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  transition: all 1s ease;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+.darkmode-box .scenary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 1s ease;
+  padding: 5px;
+}
+.darkmode-box .scenary svg {
+  width: 20px;
+}
+
+.branding {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255) 0%,
+    rgb(252, 75, 75) 35%,
+    rgb(230, 0, 0) 75%,
+    rgb(255, 0, 0) 100%
+  );
+}
+
+.branding-title {
+  min-width: 1000px;
+}
+
+.branding-title-en {
+  font-weight: 900;
+  font-size: 300%;
+}
+
+.branding-title-bn {
+  font-family: "CharuChandan3D", sans-serif;
+  font-weight: 800;
+  font-size: 280%;
+}
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* sidebar */
+
+
+.chsir {
+  vertical-align: text-bottom;
+}
+.chsir-name {
+  text-decoration: none;
+  text-align: right;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+  border-bottom: 5px solid darkorchid;
+}
+.chsir-img {
+  border: 5px solid darkorchid;
+  border-radius: 25%;
+}
+
+.Stud_image {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  align-content: center;
+  justify-content: right;
+}

@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "ES2015",
+        "lib": [
+            "ES2015",
+            "DOM"
+        ],
+        "removeComments": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "../dist/js",
+        "rootDir": "../js/src",
+        "strict": true,
+        "esModuleInterop": true,
+        "noImplicitAny": false
+    },
+    "include": [
+        "../js/src/"
+    ],
+    "exclude": [
+        "../dist/js/"
+    ]
+  }

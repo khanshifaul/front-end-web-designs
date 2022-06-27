@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="class" onchange="ChangeGroupList()">
+        <option value="">--Class--</option>
+        <option value="eight">Eight</option>
+        <option value="nine">Nine</option>
+        <option value="ten">Ten</option>
+        <option value="ssc">SSC</option>
+        <option value="hsc">HSC</option>
+    </select>
+    <select id="group"></select>
+    <script>
+        var classAndGroups = {};
+        classAndGroups['eight'] = [];
+        classAndGroups['nine'] = ['Science', 'Humanities', 'Business Studies'];
+        classAndGroups['ten'] = ['Science', 'Humanities', 'Business Studies'];
+        classAndGroups['SSC'] = ['Science', 'Humanities', 'Business Studies'];
+        classAndGroups['HSC'] = ['Science', 'Humanities', 'Business Studies'];
+        function ChangeGroupList() {
+            var classList = document.getElementById("class");
+            var groupList = document.getElementById("group");
+            var selClass = classList.options[classList.selectedIndex].value;
+            while (groupList.options.length) {
+                groupList.remove(0);
+            }
+            var classes = classAndGroups[selClass];
+            if (class) {
+                var i;
+                for (i=0; i < classes.length; i++) {
+                    var class = new Option(classes[i], i);
+                    groupList.options.add(class);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

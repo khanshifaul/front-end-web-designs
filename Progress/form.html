@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The page supports both light and dark color schemes, with light being default -->
+    <meta name="color-scheme" content="light dark">
+
+    <!-- BOOTSTRAP CSS -->
+    <!-- <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css"> -->
+
+    <!-- BOOTSTRAP Blackbox -->
+    <link rel="stylesheet" href="/lib/bootstrap-dark-5/dist/css/bootstrap-blackbox.css">
+
+    <!-- FONTAWESOME ICON -->
+    <link rel="stylesheet" href="/lib/fontawesome/css/all.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="/lib/animate.css-main/animate.css">
+
+    <!-- 
+        <!-- Google Font
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap">
+    
+        <!-- Bangla Font
+        <link rel="stylesheet" href="https://fonts.maateen.me/solaiman-lipi/font.css"> -->
+
+    <!-- Site.css -->
+    <link rel="stylesheet" href="/css/site.css">
+
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <header>
+        <div class="d-flex justify-content-between container-fluid">
+            <a class="navbar-brand fw-bolder" href="/">
+                <img src="/img/progress.png" height="75" class="d-inline-block align-items-center" alt="">
+                <img src="/img/progress-2.png" height="75" class="d-inline-block align-items-center" alt="">
+            </a>
+            <a class="navbar-brand fw-bolder d-flex align-items-center chsir" href="/">
+                <div class="col px-2 chsir-name">
+                    <p>Founder Chairman <br> Rotarian Md. Mostafizer Rohman</p>
+                </div>
+                <img src="/img/CH Sir1.jpg" height="75" class="d-inline-block align-items-center col chsir-img" alt="">
+            </a>
+
+        </div>
+        <nav class="navbar navbar-light navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
+            <div class="navbar-collapse collapse justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/FAQs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="/Contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-user"></i> Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li class="dropdown-item"><a class="nav-link" href="#">
+                                <i class="fa-solid fa-user"></i> Profile</a></li>
+                        <li class="dropdown-item">
+                            <a class="nav-link" title="Manage" href="/Identity/Account/Manage">
+                                <i class="fa-solid fa-user-gear"></i> Settings</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <form class="form-inline" action="/Identity/Account/Logout" method="post">
+                                <button type="submit" class="nav-link btn btn-link">
+                                    <i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <form action="/index.html" method="post">
+            <h3 class="text-center py-2">Admission Form</h3>
+
+            <div class="Stud_image">
+                    <input class="form" type="file" src="" alt="">
+                    <label class="form-label">Student's Image</label>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Name of Course</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Class</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Batch Time</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <select name="Program" id="" class="form-control">
+                        <option value="Exam">Exam</option>
+                        <option value="Package">Package</option>
+                    </select>
+                    <label class="form-label">Program</label>
+                    <span class="text-danger"></span>
+                </div>
+
+                <div class="form-floating col p-1">
+                    <input class="form-control" aria-required="true" />
+                    <label class="form-label">Roll No</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Student's Name</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="tel" class="form-control" aria-required="true" />
+                    <label class="form-label">Student's Mobile Number</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Father's Name</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Father's Mobile Number</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Mother's Name</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Mother's Mobile Number</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Guardian's Name</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Guardian's Mobile Number</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <select name="Program" id="" class="form-control">
+                        <option value="Islam">Islam</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Christian">Christian</option>
+                        <option value="Budhist">Budhist</option>
+                    </select>
+                    <label class="form-label">Religion</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" value="Bangladeshi" aria-required="true" />
+                    <label class="form-label">Nationality</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Address</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Name of School</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col-3 p-1">
+                    <select name="Class" id="" class="form-control">
+                        <option value="Eight">Eight</option>
+                        <option value="Nine">Nine</option>
+                        <option value="Ten">Ten</option>
+                        <option value="SSC-23">SSC-23</option>
+                        <option value="HSC-23">HSC-23</option>
+                    </select>
+                    <label class="form-label">Class</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col-3 p-1">
+                    <select name="Group" id="" class="form-control">
+                        <option value="Science">Science</option>
+                        <option value="Humanities">Humanities</option>
+                        <option value="Business_Studies">Business Studies</option>
+                    </select>
+                    <label class="form-label">Group</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col-3 p-1">
+                    <input type="text" class="form-control" aria-required="true" />
+                    <label class="form-label">Section</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col p-1">
+                    <select name="Shift" id="" class="form-control">
+                        <option value="Morning">Morning</option>
+                        <option value="Day">Day</option>
+                    </select>
+                    <label class="form-label">Shift</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="form-floating col-8 p-1">
+                    <input class="form-control" aria-required="true" />
+                    <label class="form-label">Compulsory Subject</label>
+                    <span class="text-danger"></span>
+                </div>
+                <div class="form-floating col-4 p-1">
+                    <input class="form-control" aria-required="true" />
+                    <label class="form-label">Optional Subject</label>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="d-flex">
+                <label class="form-label">Admission Referance</label>
+                <div class="form col p-1">
+                    <input class="radio" type="radio" name="Advertisement" id="">
+                    <label class="form-label">Advertisement</label>
+                    <input class="radio" type="radio" name="T.V Ad" id="">
+                    <label class="form-label">T.V Ad</label>
+                    <input class="radio" type="radio" name="Poster" id="">
+                    <label class="form-label">Poster</label>
+                    <input class="radio" type="radio" name="Newspaper Ad" id="">
+                    <label class="form-label">Newspaper Ad</label>
+                    <input class="radio" type="radio" name="Banner Ad" id="">
+                    <label class="form-label">Banner Ad</label>
+                    <input class="radio" type="radio" name="Hand Bill" id="">
+                    <label class="form-label">Hand Bill</label>
+                </div>
+                <div class="form-floating col-4 p-1">
+                    <input class="form-control" aria-required="true" />
+                    <label class="form-label">Any Other/Contact Person</label>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="col p-1">
+                    <button id="temp-submit" type="submit" class="col w-100 btn btn-lg btn-outline-primary">Save for
+                        now</button>
+                </div>
+                <div class="col p-1">
+                    <button id="final-submit" type="submit" class="col w-100 btn btn-lg btn-primary">Complete</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer class="footer border-top m-0">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">&copy; 2022 - <a href="/"
+                        class="text-muted text-decoration-none mb-3 me-2 mb-md-0 lh-1"> Progress Education Family </a>
+                </span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

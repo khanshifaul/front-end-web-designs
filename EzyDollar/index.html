@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#eeeeee" media="(prefers-color-scheme: dark)">
+    <title>Home Page - EzyDollar</title>
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+        integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/lib/bootstrap-dark-5/css/bootstrap-dark-plugin.css?v=5WhMsHlPUyGKAnoEoasBZROzZtGBuaSFBkKcF5pMxpU"
+        rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/lib/bootstrap-icons-1.7.2/bootstrap-icons.css?v=uxjsS9cYFLTjmlr8j5i-DqvOLCBugRzEeWxUMWZeYXQ"
+        rel="stylesheet" />
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        referrerpolicy="no-referrer" />
+    <!--  -->
+    <link rel="stylesheet" href="/css/site.css?v=mWXYKGH3uSYKUkXMnPDPjZqNBVGRVOmcKL96YjtOZMA" />
+    <link rel="stylesheet" href="/EzyDollar.styles.css?v=t1iC30VihQMHG2Xu76E9O_fWgdTqHe6oD7BbWp67jQo" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="align-items-stretch border-bottom">
+        <div class="container-fluid bg-primary bg-opacity-75 py-0">
+            <div class="d-flex align-content-center justify-content-between">
+                <p class="m-0 flex-grow-1 align-self-center text-center">2/5/2022 1:15:04 AM</p>
+                <p class="m-0 flex-grow-1 align-self-center text-center">Operator: online <i
+                        class="bi bi-circle-fill"></i></p>
+                <div class="form-check form-switch ms-auto">
+                    <input type="checkbox" class="form-check-input" id="darkSwitch">
+                </div>
+            </div>
+            <hr class="m-0 text-muted" />
+        </div>
+        <div>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bolder" href="/">EZYDOLLAR</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Exchange">Exchange</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Affiliate">Affiliate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/FAQs">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Home/Contact">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                            <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                                aria-label="Search">
+                        </form>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-light" title="Manage" href="/Identity/Account/Manage">Hello
+                                    khanshifaul@gmail.com!</a>
+                            </li>
+                            <li class="nav-item">
+                                <form class="form-inline" action="/Identity/Account/Logout?returnUrl=%2F" method="post">
+                                    <button type="submit" class="nav-link btn btn-link">Logout</button>
+                                    <input name="__RequestVerificationToken" type="hidden"
+                                        value="CfDJ8HozOorPWhdDvOEQqE9JEu0hGXy0mfv50-Z-JwpaW5xEWM3a6ikcYmv-DoxGtuYqHSGgbKA9CKceCMuHOw9fcsRm5SAyWYhpntK5Iy-E7bhEG0dUdL-6Nn9OxPOMAvXS6HymlzoonJfvQgoNdBWLEc3uiof9dIaSGuU25WLNreOyyzpou_Z4gAcpiTNi9cKWbQ" />
+                                </form>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            <!-- Main -->
+            <section class="bg-secondary">
+                <div class="container-md d-md-flex p-0 my-2">
+                    <div class="flex-grow-1 bg-light border border-dark p-2 m-2 text-center">
+                        <form class="container" method="post">
+                            <div class="d-flex py-3">
+                                <div class="container">
+                                    <h3><i class="bi bi-arrow-up-circle-fill"></i> Send</h3>
+                                    <select class="form-select rounded-4 mb-3" name="" id="">
+                                        <option value="bkash"> Bkash</option>
+                                        <option value="">Nagad</option>
+                                        <option value="">Rocket</option>
+                                        <option value="">Upay</option>
+                                    </select>
+                                    <input type="number" class="form-control rounded-4" id="" value=1>
+                                </div>
+                                <div class="container">
+                                    <h3><i class="bi bi-arrow-down-circle-fill"></i> Receive</h3>
+                                    <select class="form-select rounded-4 mb-3" id="">
+                                        <option value="">Upay</option>
+                                        <option value="">Bkash</option>
+                                        <option value="">Nagad</option>
+                                        <option value="">Rocket</option>
+                                    </select>
+                                    <input type="number" class="form-control rounded-4" name="" id="" disabled>
+                                </div>
+                            </div>
+                            <h5>Exchange Rate: 1 USD = 80 BDT</h5>
+                            <button type="button" class="btn btn-primary-outline btn-lg px-4 me-sm-3 fw-bold">
+                                Exchange <i class="bi bi-arrow-left-right"></i>
+                            </button>
+                            <input name="__RequestVerificationToken" type="hidden"
+                                value="CfDJ8HozOorPWhdDvOEQqE9JEu0hGXy0mfv50-Z-JwpaW5xEWM3a6ikcYmv-DoxGtuYqHSGgbKA9CKceCMuHOw9fcsRm5SAyWYhpntK5Iy-E7bhEG0dUdL-6Nn9OxPOMAvXS6HymlzoonJfvQgoNdBWLEc3uiof9dIaSGuU25WLNreOyyzpou_Z4gAcpiTNi9cKWbQ" />
+                        </form>
+                    </div>
+                    <div class="flex-grow-1 border border-dark p-2 m-2 text-center">
+                        <h3>Exchange Rate</h3>
+                        <table class="table table-secondary table-responsive">
+
+                        </table>
+                    </div>
+                </div>
+            </section class="bg-light">
+            <section>
+                <div class="container-md d-md-flex p-0 my-2">
+                    <div class="flex-grow-1">
+                        <div class="bg-light border border-dark px-2 my-4 mx-2 text-center">
+                            <h3>Completed Exchange</h3>
+                            <table class="table table-secondary table-responsive">
+                                <thead class="fw-bold  ">
+
+                                    <tr>
+                                        <th>Send</th>
+                                        <th>Receive</th>
+                                        <th>Amount</th>
+                                        <th>Username</th>
+                                        <th>Date-Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Completed</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="bg-light border border-dark px-2 my-4 mx-2 text-center">
+                            <h3>Incompleted Exchange</h3>
+                            <table class="table table-secondary table-responsive">
+                                <thead class="fw-bold  ">
+                                    <tr>
+                                        <th>Send</th>
+                                        <th>Receive</th>
+                                        <th>Amount</th>
+                                        <th>Username</th>
+                                        <th>Date-Time</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Processing</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Cancelled</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Awaiting Payment</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bkash</td>
+                                        <td>Paypal</td>
+                                        <td>80 USD</td>
+                                        <td>User01</td>
+                                        <td>2/5/2022 12:00:00 AM</td>
+                                        <td>Awaiting Payment</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 border border-dark px-2 my-4 mx-2 text-center">
+                        <h3>Our Reserve</h3>
+                        <table class="table table-secondary table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Send</th>
+                                    <th>Receive</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Paypal</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Payoneer</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Webmoney</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Perfect Money</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Coinbase</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Skrill</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>Neteller</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                                <tr>
+                                    <td>AdvCash</td>
+                                    <td>80 BDT</td>
+                                    <td>81 BDT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- footer -->
+    <footer class="border-top m-0 footer bg-light text-white">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">&copy; 2022 - <a href="/"
+                        class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"> EZYDOLLAR </a> - a product of
+                    <a>F IT Group Inc.</a></span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://instagram.com/"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="ms-3"><a class="text-muted" href="https://facebook.com/"><i class="bi bi-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"
+        integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+    <script src="/js/dark-mode-switch.js?v=Qpw-tYE4Ku7oR2QE4534I4kGUVn1uT7CjamtcWtVzFs"></script>
+
+
+    <!-- Visual Studio Browser Link -->
+    <script type="text/javascript" src="https://localhost:44399/db3eafae8e494b82a0a1d884ebf4f716/browserLink"
+        async="async" id="__browserLink_initializationData" data-requestId="9a5cbe3f1c0e46a290027c6e135ca6b1"
+        data-requestMappingFromServer="False"></script>
+    <!-- End Browser Link -->
+
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+</body>
+
+</html>

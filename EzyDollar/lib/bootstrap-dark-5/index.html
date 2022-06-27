@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="dist/css/bootstrap-dark.css" rel="stylesheet">
+
+  <title>bootstrap-dark-5</title>
+
+  <style>
+    /* BrowserSync */
+    #__bs_notify__ {
+      position: fixed;
+      top: calc(100% - 50px) !important;
+      opacity: .5;
+      border-radius: 0 !important;
+      background-color: deepskyblue !important;
+      color: black !important;
+    }
+    del {
+      opacity: .5;
+    }
+  </style>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <div class="container">
+    <h1>bootstrap-dark-5</h1>
+
+    <hr class="mt-3 mb-3">
+
+    <img src="docs/bs5dm-social.png" class="d-block m-auto" width="640" height="320">
+
+    <div class="row row-cols-1">
+      <div class="col">
+
+        <h2>The Dark Mode Conundrum</h2>
+
+        <p>Dark mode is not easy ... I discussed <i>(and proved)</i> this concept at length back in May 2020 in my quasi-white-paper
+          <a href="https://vinorodrigues.github.io/bootstrap-dark/">The Definitive Guide to Dark Mode and Bootstrap 4</a>
+          <i>(Also on <a href="https://github.com/vinorodrigues/bootstrap-dark">GitHub</a>.)</i> And subsequently also churned the
+          Bootstrap 5 variant <i>(This page!)</i> <i>(Also on <a href="https://github.com/vinorodrigues/bootstrap-dark-5">GitHub</a>.)</i></p>
+
+        <p>There are huge contentions around how to make "dark mode" available. For example:</p>
+
+        <ul>
+          <li>Toggle button <i>(with all it's JS, persistence issues (GDPR cookie consent??)</i> and the FOUC that goes with it),</li>
+          <li>vs. leverage a pure <code>prefers-color-scheme</code> media query implementation.</li>
+        </ul>
+
+        <p>and</p>
+
+        <ul>
+          <li>Does each UI concept have it's own <tt>@media (prefers-...</tt> line, thus creating a larger-than-needs-to-be CSS <i>(like <code>prefers-reduced-motion</code> does in 5)</i>,</li>
+          <li>vs. inject all the <tt>@media (prefers-...</tt> at the end of the CSS, thus forcing the authors to maintain two sets of SCSS, leading to maintenance nightmares,</li>
+          <li>vs. go with a whole bunch of sibling classes that can be switched with JS, like <a href="https://tailwindcss.com/docs/dark-mode">Tailwind</a> does,</li>
+          <li>vs. go with a known base class that is switched with JS, like <a href="https://www.gethalfmoon.com/docs/core-javascript-library/#toggling-dark-mode">Halfmoon</a> does.</li>
+        </ul>
+
+        <p>I guess it comes down to time ... both to decide on how to do this, <i>and</i> then churn the code, <i>and</i> then test it.</p>
+
+        <p>This body of work explores three methods described in the <i>"<a href="https://vinorodrigues.github.io/bootstrap-dark/">.. Definitive Guide ..</a>"</i> piece:</p>
+
+        <ol>
+          <li class="my-3"><p><code><b>bootstrap-night</b></code> - Two independent theme CSS files, auto-loaded, but with JS to offer toggle button and media query awareness,
+            <ul>
+              <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-night.md">Quick Start Guide</a></li>
+            </ul>
+            </p></li>
+          <li class="my-3" value="3"><p><code><b>bootstrap-nightshade</b></code> - One CSS file, <code>body</code> class driven and with a JS library to offer toggle button,
+            <ul>
+              <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-nightshade.md">Quick Start Guide</a></li>
+              <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/darkmode.js.md"><tt>darkmode.js</tt> Reference</a></li>
+            </ul>
+            </p></li>
+          <li class="my-3"><p><code><b>bootstrap-dark</b></code> - Pure form <i>(uses the <code>prefers-color-scheme</code> CSS media query)</i> one CSS file that offers auto OS switching dark mode.
+            <ul>
+              <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-dark.md">Quick Start Guide</a></li>
+            </ul>
+            </p></li>
+        </ol>
+      </div>
+    </div>
+
+    <br class="mt-3 mb-3">
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 shadow-sm border-secondary h-100">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">bootstrap-night</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Dark Themed drop-in replacement for Bootstrap 5</li>
+            </ul>
+            <a href="examples/cheatsheet-night.html" class="w-100 btn btn-lg btn-secondary">See Example</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm border-danger h-100">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal"></s>bootstrap-nightshade</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Dark Mode Bootstrap 5 with add-on JS library</li>
+            </ul>
+            <a href="examples/cheatsheet-nightshade.html" class="w-100 btn btn-lg btn-danger">See Example</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 shadow-sm border-primary h-100">
+          <div class="card-header">
+            <h4 class="my-0 fw-normal">bootstrap-dark</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Dark Mode drop-in substitute for Bootstrap 5</li>
+            </ul>
+            <a href="examples/cheatsheet-dark.html" class="w-100 btn btn-lg btn-primary">See Example</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="my-5">
+
+    <p>There are a few additional techniques that can be used, but these would use the same patterns as above, but with slight variations.  For example:</p>
+    <ol>
+      <li class="my-3" value="2"><p>
+        <code><b>bootstrap-nightfall</b></code> - A Bootstrap plugin; add it in after the <tt>bootstrap.css</tt> to make Bootstrap dark.
+
+        <ul>
+          <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-nightfall.md">Quick Start Guide</a></li>
+        </ul>
+
+        </p></li>
+
+
+      <li class="my-3" value="3"><p>
+        <i>(b)</i>
+        <code><b>bootstrap-blackbox</b></code> <img src="https://img.shields.io/badge/NEW-red" alt="New!"> -
+          The <code>bootstrap-nightshade</code> example shows how one can use a whole-document class to drive the theme,
+          and using the <code>darkmde.js</code> library can further enhance the experience by providing an interactive selection
+          whilst still honoring the <tt>prefers-color-scheme</tt> media query.</p>
+
+        <p>But using classes comes with its own conundrum.  If the choice is to use data attribues,
+          then the <code><b>bootstrap-blackbox.css</b></code> file can be used.</p>
+
+          <ul>
+            <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-blackbox.md">Quick Start Guide</a></li>
+            <li><a href="examples/cheatsheet-blackbox.html" class="btn btn-sm btn-danger">See Example</a></li>
+          </ul>
+
+        </p></li>
+
+
+      <li class="my-3" value="4"><p>
+        <i>(b)</i>
+        <code><b>bootstrap-unlit</b></code> - The default <code>bootstrap-dark.css</code> file is set that light if default/author preference, and dark is the optional.</p>
+
+        <p>The <code><b>bootstrap-unlit.css</b></code> file gives one the same outcome, but with dark as the default/author preference, and light is the optional.
+
+        <ul>
+          <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-unlit.md">Quick Start Guide</a></li>
+        </ul>
+
+        </p></li>
+
+
+      <li class="my-3" value="4"><p>
+        <i>(c)</i>
+        <code><b>bootstrap-dark-plugin</b></code> <img src="https://img.shields.io/badge/NEW-red" alt="New!"> -
+        The <code>bootstrap-dark-plugin.css</code> is essensially the <code>bootstrap-dark.css</code> without the original <code>bootstrap.css</code>.
+        i.e., just the media query and then the dark color scheme.</p>
+        <p>This is useful if you want to use the original CSS or even if you want to use an alternative Bootstrap CSS, but also want to dark-mode enable that.
+
+        <ul>
+          <li><a href="https://github.com/vinorodrigues/bootstrap-dark-5/blob/main/docs/bootstrap-dark-plugin.md">Quick Start Guide</a></li>
+        </ul>
+
+        </p></li>
+    </ol>
+
+    <hr class="my-5">
+
+    Visit the <a href="https://github.com/vinorodrigues/bootstrap-dark-5">GitHub repo</a>. for source, compiled CSS, and links to CDN and NPM.
+
+    <hr class="my-5">
+
+    <footer class="text-center text-muted">
+      Made with <b style="font-size:80%">❤️</b>&nbsp; by Vino Rodrigues | &copy; 2022
+    </footer>
+
+  </div>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- Don't need it, but pre-load the browser -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.js"></script>
+
+
+</body>
+</html>
