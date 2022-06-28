@@ -35,19 +35,19 @@
     <title>Document</title>
 </head>
 
-<body class="container">
+<body class="container-md">
     <!-- Header -->
     <header>
-        <div class="d-flex justify-content-between container-fluid">
-            <a class="navbar-brand fw-bolder" href="/">
-                <img src="/img/progress.png" height="75" class="d-inline-block align-items-center" alt="">
-                <img src="/img/progress-1.png" height="50" class="d-inline-block align-items-center" alt="">
+        <div class="d-md-flex justify-content-md-between container-fluid">
+            <a class="navbar-brand fw-bolder m-0" href="/">
+                <img src="/img/progress.png" class="d-inline-block align-items-center logo" alt="">
+                <img src="/img/progress-2.png" class="d-inline-block align-items-center inst-name" alt="">
             </a>
-            <a class="navbar-brand fw-bolder d-flex align-items-center chsir" href="/">
+            <a class="navbar-brand fw-bolder d-flex align-items-end chsir m-0" href="/">
                 <div class="col px-2 chsir-name">
-                    <p>Founder Chairman <br> Rotarian Md. Mostafizer Rohman</p>
+                    <p class="m-0">Founder Chairman <br> Rotarian Md. Mostafizer Rohman</p>
                 </div>
-                <img src="/img/CH Sir1.jpg" height="75" class="d-inline-block align-items-center col chsir-img" alt="">
+                <img src="/img/CH Sir1.jpg" class="d-inline-block align-items-center col chsir-img" alt="">
             </a>
 
         </div>
@@ -102,268 +102,263 @@
     <!-- Main -->
     <main>
         <!-- Hero Section -->
-        <section class="container-md d-md-flex p-0 my-2">
-            <div class="flex-grow-1 border border-dark p-2 m-2 text-center">
-                <form class="container" method="post">
-                    <div class="d-flex py-3">
-                        <div class="container">
-                            <h3><i class="fas fa-circle-arrow-up"></i> Send</h3>
-                            <select class="form-select rounded-4 mb-3" name="" id="">
-                                <option value="bkash"> Bkash</option>
-                                <option value="">Nagad</option>
-                                <option value="">Rocket</option>
-                                <option value="">Upay</option>
-                            </select>
-                            <input type="number" class="form-control rounded-4" id="" value=1>
+        <section class="container-md p-0 my-2">
+            <div class="d-md-flex">
+                <!-- Carousel -->
+                <div id="hero-carousel" class="carousel slide col-md-8 border border-dark p-2 m-2"
+                    data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/carousel-1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>Los Angeles</h3>
+                                <p>We had such a great time in LA!</p>
+                            </div>
                         </div>
-                        <div class="container">
-                            <h3><i class="fas fa-circle-arrow-down"></i> Receive</h3>
-                            <select class="form-select rounded-4 mb-3" id="">
-                                <option value="">Upay</option>
-                                <option value="">Bkash</option>
-                                <option value="">Nagad</option>
-                                <option value="">Rocket</option>
-                            </select>
-                            <input type="number" class="form-control rounded-4" value="80" name="" id="" disabled>
+                        <div class="carousel-item">
+                            <img src="/img/carousel-2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>Chicago</h3>
+                                <p>Thank you, Chicago!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/carousel-3.jpg" alt="New York" class="d-block" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>We love the Big Apple!</p>
+                            </div>
                         </div>
                     </div>
-                    <h5>Exchange Rate: 1 USD = 80 BDT</h5>
-                    <button type="button" class="btn btn-outline-primary btn-lg px-4 me-sm-3 fw-bold">
-                        Exchange <i class="fas fa-arrows-rotate"></i>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
                     </button>
-                </form>
-            </div>
-            <div class="flex-grow-1 border border-dark p-2 m-2 text-center">
-                <h3>Exchange Rate</h3>
-                <table class="table table-striped table-responsive">
-                    <thead>
-                        <tr>
-                            <th>Currency</th>
-                            <th>Send</th>
-                            <th>Receive</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Paypal</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Payoneer</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Webmoney</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Perfect Money</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Coinbase</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Skrill</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Neteller</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>AdvCash</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                    </tbody>
-                </table>
+                    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <div class="col border border-dark p-2 m-2">
+                    <h3 class="text-center border-bottom border-3 border-dark">Words of the chairman</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ratione mollitia natus fugiat
+                        neque,
+                        culpa ad molestias nobis obcaecati blanditiis, sit rerum a dolorum! Aspernatur voluptate
+                        reprehenderit sint non suscipit?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, harum iste sit magni perspiciatis at
+                        incidunt voluptatibus non culpa recusandae omnis odio accusantium, enim in nulla est sed illum
+                        veniam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quis repellat harum sunt ipsa
+                        non
+                        delectus consequatur saepe suscipit vero eaque assumenda consequuntur explicabo placeat,
+                        molestias
+                        culpa, earum officiis inventore!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempora repellat magni corporis
+                        aliquam! Labore obcaecati recusandae, sed commodi dicta facere culpa quas quaerat voluptatum
+                        tempora
+                        explicabo sunt dolore nobis!</p>
+                </div>
             </div>
         </section>
-        <!--  -->
-        <section class="container-md d-md-flex p-0 my-2">
-            <div class="flex-grow-1">
-                <div class="border border-dark px-2 my-4 mx-2 text-center">
-                    <h3>Completed Exchange</h3>
+        <!-- Live Notice -->
+        <section class="container-md p-0">
+            <div class="d-md-flex">
+                <div class="col p-2 m-2 border bg-orange-100">
+                    <div class="live-notice">
+                        <p class="d-inline p-2 m-0"><span><i class="fa-solid fa-bell"></i></span> Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.</p>
+                        <p class="d-inline p-2 m-0"><span><i class="fa-solid fa-bell"></i></span> Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Notice Board -->
+        <section class="container-md p-0 my-2">
+            <div class="d-md-flex">
+                <div class="col-md col-sm-1 border border-dark p-2 m-2">
+                    <h3 class="text-center">JSC Corner</h3>
                     <table class="table table-striped table-responsive-md">
-                        <thead class="fw-bold  ">
-                            <tr>
-                                <th>Send</th>
-                                <th>Receive</th>
-                                <th>Amount</th>
-                                <th>Username</th>
-                                <th>Date-Time</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
+
                         <tbody>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Completed</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Completed</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Completed</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Completed</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="border border-dark px-2 my-4 mx-2 text-center">
-                    <h3>Incompleted Exchange</h3>
-                    <table class="table table-striped table-responsive">
-                        <thead class="fw-bold  ">
-                            <tr>
-                                <th>Send</th>
-                                <th>Receive</th>
-                                <th>Amount</th>
-                                <th>Username</th>
-                                <th>Date-Time</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
+                <div class="col-md col-sm-1 border border-dark p-2 m-2 text-center">
+                    <h3>SSC Corner</h3>
+                    <table class="table table-striped table-responsive-md">
                         <tbody>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Processing</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Cancelled</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Awaiting Payment</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                             <tr>
-                                <td>Bkash</td>
-                                <td>Paypal</td>
-                                <td>80 USD</td>
-                                <td>User01</td>
-                                <td>2/5/2022 12:00:00 AM</td>
-                                <td>Awaiting Payment</td>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md col-sm-1 border border-dark p-2 m-2 text-center">
+                    <h3>HSC Corner</h3>
+                    <table class="table table-striped table-responsive-md">
+
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <div class="flex-grow-1 border border-dark px-2 my-4 mx-2 text-center">
-                <h3>Our Reserve</h3>
-                <table class="table table-striped table-responsive">
-                    <thead>
-                        <tr>
-                            <th>Currency</th>
-                            <th>Send</th>
-                            <th>Receive</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Paypal</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Payoneer</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Webmoney</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Perfect Money</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Coinbase</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Skrill</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>Neteller</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                        <tr>
-                            <td>AdvCash</td>
-                            <td>80 BDT</td>
-                            <td>81 BDT</td>
-                        </tr>
-                    </tbody>
-                </table>
+        </section>
+        <!-- Notice Board -->
+        <section class="container-md p-0 my-2">
+            <div class="d-md-flex">
+                <div class="col-md col-sm-1 border border-dark p-2 m-2">
+                    <h3 class="text-center">JSC Corner</h3>
+                    <table class="table table-striped table-responsive-md">
+
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md col-sm-1 border border-dark p-2 m-2 text-center">
+                    <h3>SSC Corner</h3>
+                    <table class="table table-striped table-responsive-md">
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md col-sm-1 border border-dark p-2 m-2 text-center">
+                    <h3>HSC Corner</h3>
+                    <table class="table table-striped table-responsive-md">
+
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae voluptates
+                                    quasi recusandae eaque sed obcaecati? Enim atque ducimus natus.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
     <!-- Footer -->
     <footer class="footer border-top m-0">
-        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center py-3">
-            <div class="col-md-4 d-flex align-items-center">
+        <div class="container-fluid d-md-flex justify-content-md-between py-3">
+            <div class="col-md col-sm-1">
                 <span class="text-muted">&copy; 2022 - <a href="/"
                         class="text-muted text-decoration-none mb-3 me-2 mb-md-0 lh-1"> Progress Education Family </a>
                 </span>
             </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="ms-3"><a class="text-muted" href="https://instagram.com/"><i
-                            class="fab fa-instagram"></i></a>
-                </li>
-                <li class="ms-3"><a class="text-muted" href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
-                </li>
-            </ul>
+            <div class="col-md col-sm-1">
+                <ul class="nav justify-content-md-end list-unstyled d-md-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted" href="https://instagram.com/"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted" href="https://facebook.com/"><i
+                                class="fab fa-facebook"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 

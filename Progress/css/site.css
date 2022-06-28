@@ -5,6 +5,13 @@ input, input:disabled, select {
   background-color: transparent !important;
 } */
 
+/*  */
+
+.bg-orange-100 {
+  background-color: #FFE0B2;
+}
+
+/*  */
 main {
   min-height: 75vh;
 }
@@ -35,6 +42,7 @@ main {
   border-radius: 30px;
   cursor: pointer;
 }
+
 .darkmode-box .darkmode-ball {
   width: 30px;
   height: 30px;
@@ -44,6 +52,7 @@ main {
   border-radius: 50%;
   border: 3px solid black;
 }
+
 .darkmode-box .scenary {
   display: flex;
   flex-direction: row;
@@ -51,19 +60,18 @@ main {
   transition: all 1s ease;
   padding: 5px;
 }
+
 .darkmode-box .scenary svg {
   width: 20px;
 }
 
 .branding {
   background: rgb(0, 212, 255);
-  background: linear-gradient(
-    90deg,
-    rgb(255, 255, 255) 0%,
-    rgb(252, 75, 75) 35%,
-    rgb(230, 0, 0) 75%,
-    rgb(255, 0, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(255, 255, 255) 0%,
+      rgb(252, 75, 75) 35%,
+      rgb(230, 0, 0) 75%,
+      rgb(255, 0, 0) 100%);
 }
 
 .branding-title {
@@ -80,6 +88,7 @@ main {
   font-weight: 800;
   font-size: 280%;
 }
+
 /* Footer */
 .footer {
   position: relative;
@@ -90,21 +99,30 @@ main {
 
 /* sidebar */
 
+.logo,
+.inst-name {
+  height: 75px;
+}
 
 .chsir {
-  vertical-align: text-bottom;
+  justify-self: right;
 }
+
 .chsir-name {
-  text-decoration: none;
+  color: darkorchid;
+  text-decoration:solid;
   text-align: right;
-  line-height: normal;
+  line-height:normal;
   padding: 0;
   margin: 0;
   border-bottom: 5px solid darkorchid;
+  font-weight: bolder;
 }
+
 .chsir-img {
   border: 5px solid darkorchid;
-  border-radius: 25%;
+  border-radius: 25% 25% 25% 0;
+  height: 75px;
 }
 
 .Stud_image {
@@ -113,4 +131,24 @@ main {
   border: 1px solid black;
   align-content: center;
   justify-content: right;
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    padding: 1em 0;
+  }
+
+  .logo,
+  .inst-name {
+    height: 45px;
+  }
+
+  .chsir-img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .chsir-name {
+    font-size: small;
+  }
 }
