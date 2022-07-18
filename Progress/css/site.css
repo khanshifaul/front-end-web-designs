@@ -177,3 +177,7 @@ main {
 #fileElem {
   display: none;
 }
+
+.fa-heart {
+  color: red;
+}
