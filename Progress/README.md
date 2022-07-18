@@ -4,10 +4,10 @@ Website of Progress Education Family, Bogura.
 ## Screenshots
 
 Home Page
-![Progress, HomePage](/img/Screenshots/Progress_Home.png)
+![Progress, HomePage](https://github.com/khanshifaul/front-end-web-designs/blob/main/Progress/img/Screenshots/Progress_Home.png)
 
 About Page
-![Progress, AboutPage](/img/Screenshots/Progress_About.png)
+![Progress, AboutPage](https://github.com/khanshifaul/front-end-web-designs/blob/main/Progress/img/Screenshots/Progress_About.png)
 
 Contact Page
-![Progress, ContactPage](/img/Screenshots/Progress_Contact.png)
+![Progress, ContactPage](https://github.com/khanshifaul/front-end-web-designs/blob/main/Progress/img/Screenshots/Progress_Contact.png)
