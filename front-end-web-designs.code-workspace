@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "Progress"
+		},
+		{
+			"path": "EzyDollar"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "front-end-web-designs"
+	}
+}
