@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Baloo+Da");
+:root {
+  --primary: #08a88a;
+  --dark: rgb(0, 0, 0);
+  --pure: rgb(255, 255, 255);
+  --ternary: rgb(235, 235, 235);
+  --light: rgb(242, 242, 242);
+}
+
+@media only screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: var(--pure);
+    font-family: "Bangla", "Lato", sans-serif !important;
+    font-weight: bolder;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  header.container {
+    padding: 0.5rem;
+    color: var(--pure);
+    background-color: var(--primary);
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  header.container .branding {
+    display: flex;
+    justify-content: center;
+    padding: 0 2.5rem;
+  }
+  header.container .brandinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header.container .brandinfo h1 {
+    padding-top: 1rem;
+    font-size: 4rem;
+    line-height: 95%;
+  }
+  main {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
+  div.add {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.add form#add {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  div.add form#add div.querybox {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+  }
+  div.add form#add div.querybox input {
+    padding: 0.5rem;
+    margin: 1rem 0;
+  }
+  div.add form#add div.submit-btn {
+    width: 10%;
+    transform: translateX(100%);
+  }
+  div.preview {
+    background-color: var(--light);
+    width: 50%;
+    min-height: 25rem;
+  }
+  div.search {
+    background-color: var(--ternary);
+    width: 25%;
+    min-height: 25rem;
+  }
+  footer.container {
+    padding: 1em;
+    background-color: var(--dark);
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: space-between;
+  }
+  footer.container .contact {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer.container .contact .address {
+    min-width: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer.container .contact .address .social img {
+    margin: 0 0.5em;
+    border-radius: 50%;
+  }
+  footer.container .contact .form {
+    min-width: 25em;
+  }
+  footer.container .contact .form form {
+    display: flex;
+    flex-direction: column;
+  }
+  footer.container .copyrights {
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    cursor: pointer;
+    border: 0px outset transparent;
+    background-color: var(--primary);
+  }
+  .btn-add {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1450px) {
+  body {
+    margin: 0 10%;
+    font-size: x-large;
+  }
+  header.container {
+    left: 0;
+  }
+}

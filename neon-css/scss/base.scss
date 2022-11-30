@@ -1,0 +1,76 @@
+// :root
+// *
+// body
+// reset
+
+// color variable
+/* color palette from <https://github.com/vuejs/theme> */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+:root {
+  --c-light: #ffffff;
+  --c-light-soft: #fafafa;
+  --c-light-mute: #f2f2f2;
+
+  --c-dark: #181818;
+  --c-dark-soft: #222222;
+  --c-dark-mute: #282828;
+
+  --c-indigo: #2c3e50;
+
+  --c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --c-text-light-1: var(--c-dark);
+  --c-text-light-2: rgba(60, 60, 60, 0.66);
+  --c-text-dark-1: var(--c-light);
+  --c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--c-light);
+    --color-background-soft: var(--c-light-soft);
+    --color-background-mute: var(--c-light-mute);
+
+    --color-border: var(--c-divider-dark-2);
+    --color-border-hover: var(--c-divider-dark-1);
+
+    --color-heading: var(--c-text-dark-1);
+    --color-text: var(--c-text-dark-1);
+
+    --section-gap: 160px;
+  }
+  .light-scheme {
+    color: var(--color-text);
+    background: var(--color-background);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--c-dark);
+    --color-background-soft: var(--c-dark-soft);
+    --color-background-mute: var(--c-dark-mute);
+
+    --color-border: var(--c-divider-light-2);
+    --color-border-hover: var(--c-divider-light-1);
+
+    --color-heading: var(--c-text-light-1);
+    --color-text: var(--c-text-dark-1);
+  }
+  .dark-scheme {
+    color: var(--color-text);
+    background: var(--color-background);
+  }
+}

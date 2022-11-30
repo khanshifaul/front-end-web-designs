@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Acme";
+    src: url("/fonts/acme/acme.woff");
+}
+
+@font-face {
+    font-family: "Bacode";
+    src: url("/fonts/bacode/bacode.woff2");
+}
+
+@font-face {
+    font-family: "Broadway-bt";
+    src: url("/fonts/broadway-bt/broadway-bt.woff2");
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url("/fonts/dancing-script/DancingScript.woff");
+}
+
+@font-face {
+    font-family: "Greenhouse-gas";
+    src: url("/fonts/greenhouse-gas/greenhouse-gas.woff2");
+}
+
+@font-face {
+    font-family: "Impact";
+    src: url("/fonts/Impact/impact.woff");
+}
+
+@font-face {
+    font-family: "Quick-starter";
+    src: url("/fonts/quick-starter/quick-starter.woff2");
+}
+
+@font-face {
+    font-family: "RubikMicrobe";
+    src: url("/fonts/RubikMicrobe-Regular.ttf");
+}
+
+.hero-bg {
+    background-image:
+        linear-gradient(to bottom, transparent, #94a3b8),
+        url('./bg-img/bg-img-1.jpg');
+}
+
+Nav .LinkActiveClass {
+    background: #FB2576;
+    color: #000;
+}

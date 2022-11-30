@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Acme";
+    src: url("/fonts/acme/acme.woff");
+}
+
+@font-face {
+    font-family: "Bacode";
+    src: url("/fonts/bacode/bacode.woff2");
+}
+
+@font-face {
+    font-family: "Broadway-bt";
+    src: url("/fonts/broadway-bt/broadway-bt.woff2");
+}
+
+@font-face {
+    font-family: "Greenhouse-gas";
+    src: url("/fonts/greenhouse-gas/greenhouse-gas.woff2");
+}
+
+@font-face {
+    font-family: "Quick-starter";
+    src: url("/fonts/quick-starter/quick-starter.woff2");
+}
+
+@font-face {
+    font-family: "RubikMicrobe";
+    src: url("/fonts/RubikMicrobe-Regular.ttf");
+}
+
+.bg-gold-glitter {
+    background-image:
+        /* linear-gradient(to bottom, transparent, #94a3b8), */
+        url('./gold-glitter.jpg');
+}

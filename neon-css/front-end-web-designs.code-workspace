@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5541,
+    "liveServer.settings.multiRootWorkspaceName": "neon-css",
+    "liveSassCompile.settings.rootIsWorkspace": true,
+    "liveSassCompile.settings.formats": [
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+        "savePathReplacementPairs": null
+      }
+    ]
+  }
+}
