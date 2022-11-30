@@ -17,42 +17,42 @@ const router = createRouter({
     {
       path: '/academic',
       name: 'academic',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/AcademicView.vue')
     },
     {
       path: '/admission',
       name: 'admission',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/AdmissionView.vue')
     },
     {
       path: '/student',
       name: 'student',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/StudentView.vue')
     },
     {
       path: '/teacher',
       name: 'teacher',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/TeacherView.vue')
     },
     {
       path: '/facilities',
       name: 'facilities',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/FacilitiesView.vue')
     },
     {
       path: '/notice',
       name: 'notice',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/NoticeView.vue')
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/ContactView.vue')
     },
     {
       path: '/help',
       name: 'help',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/HelpView.vue')
     },
     {
       path: '/login',
