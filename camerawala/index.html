@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Camerawala - Photography Media</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="fixed top-0 left-0 w-full bg-black text-white py-4 px-6 flex justify-between items-center z-50">
+        <div class="text-lg font-bold tracking-wider">Camerawala</div>
+        <ul class="hidden md:flex text-lg font-medium">
+            <li class="mr-4"><a href="#">Home</a></li>
+            <li class="mr-4"><a href="#">Portfolio</a></li>
+            <li class="mr-4"><a href="#">Packages</a></li>
+            <li class="mr-4"><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="md:hidden focus:outline-none">
+            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                <path fill-rule="evenodd"
+                    d="M2.25 5.25H21.75V6.75H2.25V5.25ZM2.25 9.75H21.75V11.25H2.25V9.75ZM21.75 14.25H2.25V15.75H21.75V14.25ZM2.25 18.75H21.75V20.25H2.25V18.75Z">
+                </path>
+            </svg>
+        </button>
+    </nav>
+    <div class="h-screen flex items-center justify-center overflow-hidden">
+        <div class="relative w-full h-full flex items-center justify-center">
+            <div
+                class="absolute inset-0 transform -skew-y-6 origin-top-left bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            </div>
+            <div
+                class="absolute inset-0 transform skew-y-6 origin-top-right bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
+            </div>
+            <div class="absolute inset-0 z-10 flex items-center justify-center">
+                <div class="max-w-3xl text-center">
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-8">Capture Life's Best
+                        Moments</h1>
+                    <p class="text-xl md:text-2xl text-white font-medium mb-12">We are a photography media that
+                        specializes in wedding, nature, wildlife, landscapes, street photography, and portraits.</p>
+                    <a href="#"
+                        class="text-lg md:text-xl font-medium text-white py-3 px-10 border-2 border-white hover:bg-white hover:text-black transition duration-300">View
+                        Portfolio</a>
+                </div>
+            </div>
+            <div class="absolute inset-0 z-0">
+                <div class="w-full h-full">
+                    <div class="cube">
+                        <div class="face1"></div>
+                        <div class="face2"></div>
+                        <div class="face3"></div>
+                        <div class="face4"></div>
+                        <div class="face5"></div>
+                        <div class="face6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

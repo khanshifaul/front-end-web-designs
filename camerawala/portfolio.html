@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camewarala - Portfolio</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-QvaOmgreinw1N2z99rj8ktXGzGeE15NimCGrViqTLa8tQyV7RyR90v/t/glgMfxm1XsB//ssL+PfnxVi7Ig8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-black text-white py-4 px-6 flex justify-between items-center z-50">
+        <div class="text-lg font-bold tracking-wider">Camerawala</div>
+        <ul class="hidden md:flex text-lg font-medium">
+            <li class="mr-4"><a href="#">Home</a></li>
+            <li class="mr-4"><a href="#">Portfolio</a></li>
+            <li class="mr-4"><a href="#">Packages</a></li>
+            <li class="mr-4"><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="md:hidden focus:outline-none">
+            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                <path fill-rule="evenodd"
+                    d="M2.25 5.25H21.75V6.75H2.25V5.25ZM2.25 9.75H21.75V11.25H2.25V9.75ZM21.75 14.25H2.25V15.75H21.75V14.25ZM2.25 18.75H21.75V20.25H2.25V18.75Z">
+                </path>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="h-screen flex justify-center items-center">
+        <div class="cube">
+            <div class="face1"></div>
+            <div class="face2"></div>
+            <div class="face3"></div>
+            <div class="face4"></div>
+            <div class="face5"></div>
+            <div class="face6"></div>
+        </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="py-16">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x800" alt="Gallery Image" class="rounded-lg">
+                </div>
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x801" alt="Gallery Image" class="rounded-lg">
+                </div>
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x802" alt="Gallery Image" class="rounded-lg">
+                </div>
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x803" alt="Gallery Image" class="rounded-lg">
+                </div>
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x804" alt="Gallery Image" class="rounded-lg">
+                </div>
+                <div class="hover:shadow-lg">
+                    <img src="https://source.unsplash.com/random/800x805" alt="Gallery Image" class="rounded-lg">
+                    <img src="https://source.unsplash.com/random/800x806" alt="Gallery Image" class="rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-center items-center">
+            <p>&copy; 2023 Camerawala. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom CSS -->
+    <style>
+        /* Cube animation */
+        .cube {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            transform-style: preserve-3d;
+            animation: rotate 10s linear infinite;
+        }
+
+        .cube .face1 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x800) no-repeat center center;
+            background-size: cover;
+            transform: translateZ(75px);
+        }
+
+        .cube .face2 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x801) no-repeat center center;
+            background-size: cover;
+            transform: rotateY(90deg) translateZ(75px);
+        }
+
+        .cube .face3 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x802) no-repeat center center;
+            background-size: cover;
+            transform: rotateY(180deg) translateZ(75px);
+        }
+
+        .cube .face4 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x803) no-repeat center center;
+            background-size: cover;
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+
+        .cube .face5 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x804) no-repeat center center;
+            background-size: cover;
+            transform: rotateX(90deg) translateZ(75px);
+        }
+
+        .cube .face6 {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: url(https://source.unsplash.com/random/800x805) no-repeat center center;
+            background-size: cover;
+            transform: rotateX(-90deg) translateZ(75px);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+    </style>
+</body>
+
+</html>

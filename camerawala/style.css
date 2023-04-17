@@ -1,0 +1,87 @@
+/* Cube animation */
+@keyframes cube {
+    0% {
+        transform: rotateX(0) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: cube 15s infinite linear;
+}
+
+.face1,
+.face2,
+.face3,
+.face4,
+.face5,
+.face6 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.face1 {
+    transform: translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.face2 {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.face3 {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.face4 {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.face5 {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+.face6 {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .cube {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .cube {
+        width: 180px;
+        height: 180px;
+    }
+}
+
